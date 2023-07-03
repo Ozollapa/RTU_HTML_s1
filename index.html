@@ -5,35 +5,59 @@
     <title>HTML&CSS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <style>
+        nav ul {
+          list-style: square ;
+          justify-content: left;
+        }
+      
+        nav ul li {
+          margin: 10px 50px;
+        }
+      
+        nav ul li a {
+          text-decoration: none;
+          color: #333;
+        }
+      </style>
 </head>
 
 <body style="margin: 0; padding: 0; font-family: Times new roman; " >
 
+
     <!-- Header -->
-    <header style="background-color: aliceblue; position: sticky; top: 0; display: flex; flex-direction: row; justify-content: space-between;">
-        <a href="#pavasaris">Šeit ir virsraksts, kurš paliek galvenes daļā.</a>
-        <div>
-            <a href="#vasara">Vasara</a>
-            <a href="#plava">Uzdevumi</a>
-        </div>
+    <header style="background-color: aliceblue; top: 0;padding:25px">
+        <h1>Šeit ir virsraksts, kurš paliek galvenes daļā.</h1>
+        <nav>
+            <ul>
+                <li><a href="#pavasaris">Pavasaris</a></li>
+                <li><a href="#vasara">Vasara</a></li>
+                <li><a href="#plava">Uzdevumi</a></li>
+            </ul>
+        </nav>    
     </header>
 <p>Hello asd</p>
-    <div id="pavasaris">
-        <img src="resources/Pavasaris.jpg" alt="Pavasaris">
-        <div>
-            <h1>Pavasaris</h1>
+    <div>
+        <div">
+            <img src="resources/Pavasaris.jpg" alt="Pavasaris" style="width:100%"">
+            <div id="pavasaris">
+                <h1>Pavasaris</h1><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor tortor sit amet dictum condimentum.</p>
+            </div>   
         </div>
-        <div id="vasara">
-            <img src="resources/Vasara.jpg" alt="Vasara">
-            <span><h1>Šeit ir apraksts, kuram ir jāatrodas bildei kreisajā pusē.</h1></span><br>
+        <div id="vasara" style="display:flex; align-items:center;flex-direction:row-reverse;">
+            <img src="resources/Vasara.jpg" alt="Vasara" style="width:50%">
+            <div>
+                <h1>Šeit ir apraksts, kuram ir jāatrodas bildei kreisajā pusē.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor tortor sit amet dictum condimentum.</p><br>
+            </div>   
         </div>
 
         <div id="plava" style="display: flex; flex-direction: row;">
-            <div style="display: block;">
-                <img style="display: block; width:100%" src="resources/Plava.jpg" alt="Plava">
-            </div>
+            <img style="display: block; width:50%" src="resources/Plava.jpg" alt="Plava">
             <div style="display: block;">
                 <h1>Šeit apraksts, kuram ir jāatrodas bildes labajā pusē.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor tortor sit amet dictum condimentum.</p>
             </div>
         </div>
 
@@ -52,7 +76,8 @@
         </div>
 
         <!-- Footer -->
-        <footer>
+        <footer style="text-align:center;background-color:rgba(66, 254, 254, 0.111);padding-bottom:15px;margin-top:2cm">
+            <hr style="padding-bottom:15px;border-width:1px; border-style:dashed;">
             <p>Šeit ir tukšs footers</p>
             <p>Šeit ir tukšs footers vēlreiz</p>
         </footer>
